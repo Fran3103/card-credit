@@ -91,22 +91,28 @@ $font: 'Space Grotesk';
             color: $Lightgrayishviolet;
         }
 
-        .name-card{
-            position:absolute;
-            top: 10px;
-            left: 35px;
-            font-size: 0.7rem;
-            letter-spacing: 1px;
-            color: $Lightgrayishviolet;
-            text-transform: uppercase;
-        }
-        .year-card{
+        .name_year{
+            width: 250px;
+            display: flex;
+            justify-content: space-between;
             position: absolute;
-            top: 10px;
-            left: 245px;
-            font-size: 0.7rem;
-            color: $Lightgrayishviolet;
+            top:10px ;
+            left: 30px;
+
+            .name-card{
+            
+                font-size: 0.7rem;
+                letter-spacing: 1px;
+                color: $Lightgrayishviolet;
+                text-transform: uppercase;
+            }
+            .year-card{
+                
+                font-size: 0.7rem;
+                color: $Lightgrayishviolet;
+            }
         }
+        
     }
 
 }
@@ -189,22 +195,7 @@ $font: 'Space Grotesk';
 
     display: none;
     text-align: center;
-    .ok{
-        p{
-            text-align: center;
-            position: relative;
-            top: 15px;
-            font-size: 2rem;
-            color: $Lightgrayishviolet;
-        }
-        
-        left: 40%;
-        position: relative;
-        width: 80px;
-        height: 80px;
-        border-radius: 50%;
-        background: linear-gradient(hsl(249, 99%, 64%),hsl(278, 94%, 30%))
-    }
+    
     h1{
         text-transform: uppercase;
         color: $Verydarkviolet;
@@ -291,12 +282,11 @@ footer{
                 height: 17px;
                 width: 17px;
             }
-
-            .name-card{
-                top: 15px;
+            .name_year{
+                width: 300px;
                 left: 45px;
-                font-size: 0.9rem;
             }
+            
 
             .number-card{
                 top: -40px;
@@ -304,11 +294,7 @@ footer{
                 font-size: 1.3rem;
             }
 
-            .year-card{
-                top: 13px;
-                left: 285px;
-                font-size: 0.9rem;
-            }
+        
         }
     
     }
@@ -375,15 +361,13 @@ footer{
                 top: -60px;
                 font-size: 1.4rem;
             }
-            .name-card{
-                top: -10px;
+            .name_year{
+                width: 320px;
                 left: 170px;
+                top: -10px;
             }
 
-            .year-card{
-                top: -12px;
-                left: 430px;
-            }
+            
 
 
         }
@@ -411,6 +395,23 @@ button{
     margin: auto 105px;
     
 }
+
+.thank{
+    .ok{
+       img{
+        width: 100px;
+        
+       }
+
+    }
+    h1{
+        font-size: 2.8rem;
+    }
+    p{
+        font-size: 1.4rem;
+    }
+}
+
 
 }
 
@@ -463,14 +464,11 @@ button{
                 left: 55px;
                 width: 100%;
             }
-            .name-card{
-                top: -670px;
+            .name_year{
+                width: 310px;
+                top: -660px;
                 left: 55px;
-            }
-
-            .year-card{
-                top: -670px;
-                left: 320px;
+                
             }
 
         }
@@ -495,6 +493,13 @@ button{
         margin-left: 0px;
     
 }
+
+.thank{
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+
 }
 
 
@@ -508,12 +513,14 @@ button{
 
         .back{
             .card-back{
+                top: -550px;
                 left: 210px;
 
             }
 
             .cvc-card{
                 left: 490px;
+                top: -455px ;
             }
 
         
@@ -522,23 +529,24 @@ button{
         .front{
             .card-front{
                 left: 160px;
+                top: -780px;
             }
 
             .dot1{
                 left: 180px;
+                top: -760px;
             }
             .dot2{
                 left: 235px;
+                top: -750px;
             }
             .number-card{
                 left: 180px;
+                top: -670px;
             }
-            .name-card{
+            .name_year{
                 left: 180px;
-            }
-
-            .year-card{
-                left: 450px;
+                top: -610px;
             }
         }
 
@@ -548,6 +556,7 @@ button{
     .formulario{
         width: 410px;
         margin-left: 200px;
+        margin-top: 150px;
 
         form{
             #cvc{
@@ -558,6 +567,10 @@ button{
         button{
             margin-top: 20px;
         }
+    }
+
+    .thank{
+        margin-left: 170px;
     }
 }
 
@@ -577,6 +590,7 @@ button{
         .card-back{
             width: 440px;
             height: 240px;
+            top: -600px;
             }
         .cvc-card{
             left: 560px;
@@ -591,14 +605,16 @@ button{
             .card-front{
                 width: 440px;
                 height: 240px;
+                top: -830px;
             }
             .dot1{
                 left: 190px;
                 width: 50px;
                 height: 50px;
+                top: -810px;
             }
             .dot2{
-                top: -795px;
+                top: -800px;
                 left: 260px;
                 height: 22px;
                 width: 22px;
@@ -608,17 +624,19 @@ button{
                 font-size: 1.6rem;
                 top: -700px;
             }
-            .name-card{
-                top: -640px;
+            .name_year{
                 left: 190px;
-                font-size: 1.1rem;
-            }
-            .year-card{
-                top: -642px;
-                left: 500px;
-                font-size: 1.1rem;
+                top: -640px;
+                width: 360px;
+                .name-card{
+                    font-size: 0.9rem;
+                }
+                .year-card{
+                    font-size: 0.9rem;
+                }
             }
         }
+
     }
 
 
@@ -633,6 +651,11 @@ button{
         }
         
     }
+
+    .thank{
+        margin-top: 200px;
+        margin-left: 400px;
+    }
     
 
     footer{
@@ -641,4 +664,5 @@ button{
         font-size: 1rem;
         margin: -40px;
     }}
+
 }
