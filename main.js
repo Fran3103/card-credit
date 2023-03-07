@@ -68,15 +68,21 @@ cvc.addEventListener('input', ( )=>{
 form.addEventListener('submit', () =>{
     
     
-    
+
     thank.style.display= 'block';
     form.style.display= 'none';
-
+    
 })
 
 continuar.addEventListener('click', ()=>{
     thank.style.display= 'none';
-    form.style.display= 'block'
+    form.style.display= 'block';
+    
+    numberCARD.innerText = "0000 0000 0000 0000";
+    nameCARD.innerText = "Jane Appleseed";
+    cvcCARD.innerText = "000";
+    yearCARD.innerText = "00";
+    monthCARD.innerText = "00";
 })
 
 
