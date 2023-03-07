@@ -9,27 +9,38 @@ $font: 'Space Grotesk';
 
 *{font-family :$font;}
 
+.container{
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+
 .bg{
     margin-bottom: 60px;
+
+    .bg-mobile{
+        width: 100%;
+    }
 
     .bg-desktop{
         display: none;
     }
 
     .back{
+        position: relative;
 
         .cvc-card{
             letter-spacing: 2px;
             position: absolute;
-            top: 102px;
-            left: 280px;
-            font-size: 0.7rem;
+            top: -137px;
+            left: 297px;
+            font-size: 0.6rem;
             color: $Lightgrayishviolet;
         }
 
         .card-back{
             position: absolute;
-            top: 30px;
+            top: -210px;
             left: 65px;
             width: 290px;
             height: 160px;
@@ -40,10 +51,10 @@ $font: 'Space Grotesk';
 
     .front{
         
-
+        position: relative;
         .card-front{
             position: absolute;
-            top: 120px;
+            top: -120px;
             left: 15px;
             width: 290px;
             height: 160px;
@@ -55,7 +66,7 @@ $font: 'Space Grotesk';
             height: 30px;
             border-radius: 50%;
             background: $Lightgrayishviolet;
-            top: 140px;
+            top: -100px;
             left: 35px;
         }
         
@@ -66,14 +77,14 @@ $font: 'Space Grotesk';
             border-radius: 50%;
             border: 1px solid $Lightgrayishviolet;
             background: transparent;
-            top: 148px;
+            top: -92px;
             left: 75px;
         }
 
 
         .number-card{
             position: absolute;
-            top: 210px;
+            top: -30px;
             left: 35px;
             font-size: 1.1rem;
             letter-spacing: 2px;
@@ -82,7 +93,7 @@ $font: 'Space Grotesk';
 
         .name-card{
             position:absolute;
-            top: 250px;
+            top: 10px;
             left: 35px;
             font-size: 0.7rem;
             letter-spacing: 1px;
@@ -91,7 +102,7 @@ $font: 'Space Grotesk';
         }
         .year-card{
             position: absolute;
-            top: 250px;
+            top: 10px;
             left: 245px;
             font-size: 0.7rem;
             color: $Lightgrayishviolet;
@@ -103,9 +114,10 @@ $font: 'Space Grotesk';
 
 
 .formulario{
-    width: 300px;
+    width: 90%;
     margin: 5px auto;
-    display: none;
+    display: block;
+    
     form{
         text-transform: uppercase;
         color: $Verydarkviolet;
@@ -132,7 +144,7 @@ $font: 'Space Grotesk';
         }
         #year, #mount{
             padding: 10px;
-            margin-left: 10px;
+            
             width: 60px;
             margin-right: 5px;
         }
@@ -151,7 +163,7 @@ $font: 'Space Grotesk';
 
 .thank{
 
-    display: block;
+    display: none;
     text-align: center;
     .ok{
         p{
@@ -189,8 +201,8 @@ $font: 'Space Grotesk';
 }
 
 button{
-    margin-left: 20px;
-    width: 90%;
+    margin-top: 10px;
+    width:  100%;
     height: 50px;
     border-radius: 10px;
     background: $Verydarkviolet;
@@ -200,46 +212,400 @@ button{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 footer{
 
     .attribution { 
-        margin: 30px 0;
+        margin: 40px 0;
+        margin-bottom: 0;
         font-size: 0.7rem; 
         text-align: center; 
         a { color: hsl(228, 45%, 44%);
+            text-decoration: none;
         }
     }
 }
 
+
+
+@media screen and (min-width:470px) {
+    .bg{
+        margin-bottom: 90px;
+        .back{
+            .card-back{
+                width: 350px;
+                height: 210px;
+                top: -270px;
+                left: 90px;
+            }
+
+            .cvc-card{
+                top: -175px;
+                left: 367px;
+                font-size: 0.8rem;
+            }
+        }
+        .front{
+            .card-front{
+            width: 350px;
+            height: 210px;
+            top:-152px;
+            left: 25px;
+            }
+
+            .dot1{
+                top: -120px;
+                left: 45px;
+                width: 35px;
+                height: 35px;
+            }
+            .dot2{
+                top:-110px;
+                left: 90px;
+                height: 17px;
+                width: 17px;
+            }
+
+            .name-card{
+                top: 15px;
+                left: 45px;
+                font-size: 0.9rem;
+            }
+
+            .number-card{
+                top: -40px;
+                left: 45px;
+                font-size: 1.3rem;
+            }
+
+            .year-card{
+                top: 13px;
+                left: 285px;
+                font-size: 0.9rem;
+            }
+        }
+    
+    }
+
+    form{
+        button{
+            width: 100%;
+            margin: 0;
+        }
+    }
+}    
+
+@media screen and (min-width: 700px) {
+
+    .container{
+        max-width: 800px;
+    }
+    .bg{
+        
+        .back{
+            .card-back{
+                top: -300px;
+                left: 230px;
+                width: 370px;
+                
+            }
+            .cvc-card{
+                left: 520px;
+                top: -205px;
+            }
+        }
+
+        .front{
+            .card-front{
+                width:370px ;
+                left: 150px;
+                top: -182px;
+            }
+
+            .dot1{
+                top: -160px;
+                left: 170px;
+                height: 40px;
+                width: 40px;
+            }
+            .dot2{
+                top: -150px;
+                left: 220px;
+                height: 18px;
+                width: 18px;
+            }
+            .number-card{
+                left: 170px;
+                top: -60px;
+                font-size: 1.4rem;
+            }
+            .name-card{
+                top: -10px;
+                left: 170px;
+            }
+
+            .year-card{
+                top: -12px;
+                left: 430px;
+            }
+
+
+        }
+
+
+    }
+    .formulario{
+        width: 70%;
+        form{
+            font-size: 0.9rem;
+            #mount{
+                margin-left: 0;
+    
+        }
+    }
+  
+    button{
+        width: 100%;
+        margin: 0;
+    }
+}
+
+button{
+    width: 70%;
+    margin: auto 105px;
+    
+}
+
+}
+
+@media screen and (min-width: 802px) {
+
+    .container{
+        max-width: none;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+    }
+
+    .bg{
+        .bg-mobile{
+            display: none;
+        }
+        .bg-desktop{
+            display: block;
+            width: 70%;
+            height: 900px;
+        }
+
+        .back{
+            .card-back{
+                top: -600px;
+                left: 70px;
+            }
+            .cvc-card{
+                top:-505px;
+                left: 350px;
+            }
+        }
+        .front{
+            .card-front{
+                top: -830px;
+                left: 30px;
+            }
+
+            .dot1{
+                top: -810px;
+                left: 55px;
+            }
+            .dot2{
+                top: -800px;
+                left: 110px;
+            }
+
+            .number-card{
+                top: -720px;
+                left: 55px;
+                width: 100%;
+            }
+            .name-card{
+                top: -670px;
+                left: 55px;
+            }
+
+            .year-card{
+                top: -670px;
+                left: 320px;
+            }
+
+        }
+    }
+
+    .formulario{
+        margin-top: 100px;
+        margin-right: 20px;
+        width: 40%;
+        form{
+
+            #cvc{
+                width: 190px;
+            }
+
+        }
+    }
+
+    button{
+        width: 100%;
+        margin-bottom: 0px;
+        margin-left: 0px;
+    
+}
+}
+
+
+@media screen and (min-width:1200px) {
+
+    .bg{
+        .bg-desktop{
+            width: 100%;
+
+        }
+
+        .back{
+            .card-back{
+                left: 210px;
+
+            }
+
+            .cvc-card{
+                left: 490px;
+            }
+
+           
+        }
+
+        .front{
+            .card-front{
+                left: 160px;
+            }
+
+            .dot1{
+                left: 180px;
+            }
+            .dot2{
+                left: 235px;
+            }
+            .number-card{
+                left: 180px;
+            }
+            .name-card{
+                left: 180px;
+            }
+
+            .year-card{
+                left: 450px;
+            }
+        }
+
+
+    }
+
+    .formulario{
+        width: 400px;
+        margin-left: 200px;
+
+        form{
+            #cvc{
+                width: 240px;
+            }
+            #year{
+                width: 70px;
+            }
+            #mount{
+                width: 70px;
+            }
+
+        }
+        button{
+            margin-top: 20px;
+        }
+    }
+}
+
+@media screen and (min-width: 1350px) {
+
+
+    .container{
+        max-height: 900px;
+        height: 900px;
+    }
+
+
+    .bg{
+        .back{
+            top: 100px;
+            left: 40px;
+        .card-back{
+            width: 440px;
+            height: 240px;
+            }
+        .cvc-card{
+            left: 560px;
+            top: -495px;
+            font-size: 1rem;
+        }
+        }
+
+        .front{
+            top: 50px;
+            left: 10px;
+            .card-front{
+                width: 440px;
+                height: 240px;
+            }
+            .dot1{
+                left: 190px;
+                width: 50px;
+                height: 50px;
+            }
+            .dot2{
+                top: -795px;
+                left: 260px;
+                height: 22px;
+                width: 22px;
+            }
+            .number-card{
+                left: 190px;
+                font-size: 1.6rem;
+                top: -700px;
+            }
+            .name-card{
+                top: -640px;
+                left: 190px;
+                font-size: 1.1rem;
+            }
+            .year-card{
+                top: -642px;
+                left: 500px;
+                font-size: 1.1rem;
+            }
+        }
+    }
+
+
+
+    form{
+        margin-top: 150px;
+        width: 100%;
+        margin-left: 120px;
+        input{
+            font-size: 1.1rem;
+        }
+    }
+    
+
+    footer{
+        
+        .attribution{
+        font-size: 1rem;
+        margin: -40px;
+    }}
+}
