@@ -1,0 +1,245 @@
+@import url(/Sass/cssreload.css);
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+$White: hsl(0, 0%, 100%);
+$Lightgrayishviolet: hsl(270, 3%, 87%);
+$Darkgrayishviolet: hsl(279, 6%, 55%);
+$Verydarkviolet: hsl(278, 68%, 11%);
+$RedErrors: hsl(0, 100%, 66%);
+$font: 'Space Grotesk';
+
+*{font-family :$font;}
+
+.bg{
+    margin-bottom: 60px;
+
+    .bg-desktop{
+        display: none;
+    }
+
+    .back{
+
+        .cvc-card{
+            letter-spacing: 2px;
+            position: absolute;
+            top: 102px;
+            left: 280px;
+            font-size: 0.7rem;
+            color: $Lightgrayishviolet;
+        }
+
+        .card-back{
+            position: absolute;
+            top: 30px;
+            left: 65px;
+            width: 290px;
+            height: 160px;
+
+        }
+    }   
+
+
+    .front{
+        
+
+        .card-front{
+            position: absolute;
+            top: 120px;
+            left: 15px;
+            width: 290px;
+            height: 160px;
+        }
+
+        .dot1{
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: $Lightgrayishviolet;
+            top: 140px;
+            left: 35px;
+        }
+        
+        .dot2{
+            position: absolute;
+            width: 13px;
+            height: 13px;
+            border-radius: 50%;
+            border: 1px solid $Lightgrayishviolet;
+            background: transparent;
+            top: 148px;
+            left: 75px;
+        }
+
+
+        .number-card{
+            position: absolute;
+            top: 210px;
+            left: 35px;
+            font-size: 1.1rem;
+            letter-spacing: 2px;
+            color: $Lightgrayishviolet;
+        }
+
+        .name-card{
+            position:absolute;
+            top: 250px;
+            left: 35px;
+            font-size: 0.7rem;
+            letter-spacing: 1px;
+            color: $Lightgrayishviolet;
+            text-transform: uppercase;
+        }
+        .year-card{
+            position: absolute;
+            top: 250px;
+            left: 245px;
+            font-size: 0.7rem;
+            color: $Lightgrayishviolet;
+        }
+    }
+
+}
+
+
+
+.formulario{
+    width: 300px;
+    margin: 5px auto;
+    display: none;
+    form{
+        text-transform: uppercase;
+        color: $Verydarkviolet;
+        font-size: 0.7rem;
+        font-weight: 500;
+        letter-spacing: 1px;
+        
+        
+        input{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            border-radius: 7px;
+            border-style: none;
+            border: 1px solid $Lightgrayishviolet;
+            width: 100%;
+            height: 40px;
+            padding: 10px;
+        }
+
+        ::placeholder{
+            color: $Lightgrayishviolet;
+            
+            
+        }
+        #year, #mount{
+            padding: 10px;
+            margin-left: 10px;
+            width: 60px;
+            margin-right: 5px;
+        }
+        #cvc{
+            width: 131px;
+        }
+
+        .cvc-label{
+            margin-left: 20px;
+        }
+
+       
+    }
+}
+
+
+.thank{
+
+    display: block;
+    text-align: center;
+    .ok{
+        p{
+            text-align: center;
+            position: relative;
+            top: 15px;
+            font-size: 2rem;
+            color: $Lightgrayishviolet;
+        }
+        
+        left: 40%;
+        position: relative;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background: linear-gradient(hsl(249, 99%, 64%),hsl(278, 94%, 30%))
+    }
+    h1{
+        text-transform: uppercase;
+        color: $Verydarkviolet;
+        font-weight: 500;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    p{
+        margin-bottom: 60px;
+        font-size: 1.1rem;
+        color: $Darkgrayishviolet;
+        font-weight: 500;
+
+    }
+
+
+}
+
+button{
+    margin-left: 20px;
+    width: 90%;
+    height: 50px;
+    border-radius: 10px;
+    background: $Verydarkviolet;
+    color: $Lightgrayishviolet;
+    font-size: 1rem;
+    border-style: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+
+    .attribution { 
+        margin: 30px 0;
+        font-size: 0.7rem; 
+        text-align: center; 
+        a { color: hsl(228, 45%, 44%);
+        }
+    }
+}
+
