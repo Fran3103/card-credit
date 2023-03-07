@@ -145,17 +145,41 @@ $font: 'Space Grotesk';
         #year, #mount{
             padding: 10px;
             
-            width: 60px;
+            width: 15%;
             margin-right: 5px;
         }
+        .p_number{
+            font-size: 0.5rem;
+            color: $RedErrors;
+            display: none;
+            margin-bottom: 10px;
+        }
+        .p_cvc{
+            font-size: 0.5rem;
+            color: $RedErrors;
+            display: none;
+            margin-left: 130px;
+            margin-top: -10px;
+            
+            
+        }
+        .p_year{
+            font-size: 0.5rem;
+            color: $RedErrors;
+            display: none;
+            
+        }
         #cvc{
-            width: 131px;
+        width: 60%;
+        margin-left: 10px;
         }
 
         .cvc-label{
             margin-left: 20px;
         }
-
+        input:hover{
+            cursor: pointer;
+        }
        
     }
 }
@@ -201,7 +225,7 @@ $font: 'Space Grotesk';
 }
 
 button{
-    margin-top: 10px;
+    margin-top: 20px;
     width:  100%;
     height: 50px;
     border-radius: 10px;
@@ -209,6 +233,9 @@ button{
     color: $Lightgrayishviolet;
     font-size: 1rem;
     border-style: none;
+}
+button:hover{
+    cursor: pointer;
 }
 
 
@@ -285,13 +312,23 @@ footer{
         }
     
     }
-
+    .formulario{
     form{
-        button{
-            width: 100%;
-            margin: 0;
+        #cvc{
+            margin-left: 24px;}
+
+        .cvc-label{
+            margin-left: 80px;
         }
+        .p_cvc{
+            margin-left: 190px;
+        }
+       
     }
+    button{
+        width: 100%;
+        margin: 0;
+    }}
 }    
 
 @media screen and (min-width: 700px) {
@@ -446,7 +483,7 @@ button{
         form{
 
             #cvc{
-                width: 190px;
+                width: 50%;
             }
 
         }
@@ -461,7 +498,7 @@ button{
 }
 
 
-@media screen and (min-width:1200px) {
+@media screen and (min-width:1100px) {
 
     .bg{
         .bg-desktop{
@@ -479,7 +516,7 @@ button{
                 left: 490px;
             }
 
-           
+        
         }
 
         .front{
@@ -509,20 +546,14 @@ button{
     }
 
     .formulario{
-        width: 400px;
+        width: 410px;
         margin-left: 200px;
 
         form{
             #cvc{
-                width: 240px;
+                width: 59%;
             }
-            #year{
-                width: 70px;
-            }
-            #mount{
-                width: 70px;
-            }
-
+        
         }
         button{
             margin-top: 20px;
@@ -592,13 +623,15 @@ button{
 
 
 
+
     form{
-        margin-top: 150px;
+        margin-top: 70px;
         width: 100%;
         margin-left: 120px;
         input{
-            font-size: 1.1rem;
+            font-size: 1rem;
         }
+        
     }
     
 

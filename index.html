@@ -54,6 +54,7 @@
             <label for= "number" >Card Number <br></label>
 
             <input type="text" id="number" placeholder=" e.g. 1234 5678 9123 0000">
+            <p class="p_number">Wrong format, number only</p>
             <br>
 
             <label for= "mount" >Exp. Date (MM/YY) </label>
@@ -61,7 +62,10 @@
             <br>
             <input type="text" id="mount" placeholder=" MM ">
             <input type="text" id="year" placeholder="YY">
-            <input type="number" id="cvc" placeholder=" e.g. 123">
+            <input type="text" id="cvc" placeholder=" e.g. 123">
+            <p class="p_year">Can t be blank</p>
+            
+            <p class="p_cvc">Can t be blank</p>
             <br>
             
             <button type="submit"> Confirm</button>
